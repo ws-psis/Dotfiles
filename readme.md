@@ -1,6 +1,6 @@
-## **Minha config personaliza do PowerShell** 
+## **Dotfiles com arquivos de configuração e utilitários** 
 
 
-![terminal](pwsh.png)
+### Terminal
 
-
+![Terminal](./terminal.png)

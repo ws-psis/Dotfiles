@@ -8,7 +8,6 @@ ORACLE_HOME=/home/oracle/instantclient_19_19
 LD_LIBRARY_PATH=$ORACLE_HOME
 JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/bin/java
 PATH=$PATH:$ORACLE_HOME:$JAVA_HOME/bin
-
 export ORACLE_BASE ORACLE_HOME PATH LD_LIBRARY_PATH JAVA_HOME
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -76,7 +75,6 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-web-search
 git
 fzf
 docker
@@ -127,7 +125,7 @@ export NVM_DIR="$HOME/.nvm"
 alias python=python3
 alias bat="/usr/local/bat/bat"
 PATH=~/.console-ninja/.bin:$PATH
-alias  lv="~/.local/bin/lvim"
+export PATH="$HOME/.cargo/bin:$PATH"
 # pnpm
 export PNPM_HOME="/root/.local/share/pnpm"
 case ":$PATH:" in
@@ -135,3 +133,4 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+export PATH=$HOME/.local/bin:$PATH
